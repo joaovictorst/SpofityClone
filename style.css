@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    /* outline: dashed 1px red; */
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    color: rgb(179, 179, 179)
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header form {
+    width: 100px;
+}
+
+.Block {
+    padding: 8px;
+}
+
+.search {
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    border-radius: 500px;
+}
+
+header figure img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 48px
+}
+
+main {
+    gap: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+main .SongList {
+    margin: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 20px;
+}
+
+main .SongList ul {
+    list-style: none;
+    width: 100%;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+main .SongList ul li a {
+    background: rgb(179, 179, 179, 0.1);
+    padding: 0;
+    border-radius: 4px;
+}
+
+main .SongList ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main .SongList ul li a img {
+    border-radius: 4px 0 0 4px;
+}
+
+
+main nav header {
+    padding: 12px 16px 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .scroll .searchlibrary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main ul li a {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+}
+
+main ul li a:hover {
+    background-color: #1f1f1f;
+}
+
+main ul li img {
+    width: 48px;
+    border-radius: 4px;
+}
+
+main ul li .likedSongs {
+    display: flex;
+    flex-direction: column;
+}
+
+main nav {
+    background: #121212;
+}
+
+.mainSection {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #121212, #31285c);
+    border-radius: 8px;
+}
+
+.mainSection .section .buttons {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.mainSection .section .buttons a {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 4px 12px 4px 12px;
+    border-radius: 999px;
+}
+
+.section {
+    width: 100%;
+}
+
+.explor-gen {
+    margin: 20px;
+}
+
+.carousel {
+    gap: 8px;
+    display: flex;
+}
+
+.carouselBlock, .carouselBlock img {
+    width: 100px;
+    height: 200px;
+}
+
+.carouselBlock img {
+    object-fit: cover;
+}
+
+.carousel img {
+    border-radius: 12px;
+}
