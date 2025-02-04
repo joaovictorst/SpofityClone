@@ -20,26 +20,30 @@
 
     <div class="Block">
         <header>
-            <a href="/"><img src="./images/pageIcons/spotifyIcon.svg" alt="icon"></a>
-            <a href="/"><img src="./images/pageIcons/home.svg" alt="icon"></a>
+            <div>
+                <a href="/"><img src="./images/pageIcons/spotifyIcon.svg" alt="icon"></a>
+            </div>
+            <div class="search-blocks">
+                <a href="/"><img src="./images/pageIcons/home.svg" alt="icon"></a>
+                <form role="search">
+                    <div class="search">
+                        <a href="/" class="search-icon"><img src="./images/pageIcons/search.svg" alt="icon"></a>
+                        <input placeholder="What do you want to play?" class="searchbox" type="search" role="combobox">
+                        <a href="/" class="browse-icon"><img src="./images/pageIcons/browse.svg" alt="icon"></a>
+                    </div>
+                </form>
+            </div>
+
+            <div>
+                <span><a class="install-button" href="#"><img src="./images/pageIcons/install.svg"
+                            alt="install App">Install App</a></span>
+                <a href="/" class="whats-new"><img src="./images/pageIcons/news.svg" alt="What's New"></a>
+                <figure>
+                    <img src="./images/profileImages/images.jpeg" alt="Profile image">
+                </figure>
+            </div>
 
 
-            <form role="search">
-                <div class="search">
-                    <a href="/"><img src="./images/pageIcons/search.svg" alt="icon"></a>
-
-
-                    <a href="/"><img src="./images/pageIcons/browse.svg" alt="icon"></a>
-                </div>
-            </form>
-
-            <span><a href="#"><img src="./images/pageIcons/install.svg" alt="install App">Install App</a></span>
-
-            <a href="/"><img src="./images/pageIcons/news.svg" alt="What's New"></a>
-
-            <figure>
-                <img src="./images/profileImages/images.jpeg" alt="Profile image">
-            </figure>
 
         </header>
 
@@ -47,14 +51,20 @@
             <nav>
                 <div>
                     <header>
-                        <button><span><img src="./images/pageIcons/library.svg" alt="library"></span>Your
+                        <button class="button-library"><span><img src="./images/pageIcons/library.svg"
+                                    alt="library"></span>Your
                             Library</button>
-                        <button><img src="./images/pageIcons/plus.svg" alt="plus"></button>
+                        <button class="plus-library"><img src="./images/pageIcons/plus.svg" alt="plus"></button>
                     </header>
                     <div class="scroll">
                         <div class="searchlibrary">
                             <a href="#"><img src="./images/pageIcons/search.svg" alt=""></a>
-                            <a href="#">Recents<img src="./images/pageIcons/recents.svg" alt=""></a>
+                            <div class="recents-button">
+                                <a href="#">
+                                    <p>Recents</p>
+                                    <img src="./images/pageIcons/recents.svg" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <ul>
@@ -149,33 +159,56 @@
                     <h2>Explore your genres</h2>
                     <div class="carousel">
                         <div class="carouselBlock">
-                            <img src="./images/carousel/country.jpg" alt="">
-                            <p>#country</p>
+                            <div>
+                                <img class="carousel-img" src="./images/carousel/country.jpg" alt="">
+                                <p>#country</p>
+                            </div>
                         </div>
                         <div class="carouselBlock">
-                            <img src="./images/carousel/rock.jpeg" alt="">
-                            <p>#rock</p>
+                            <div>
+                                <img class="carousel-img" src="./images/carousel/rock.jpeg" alt="">
+                                <p>#rock</p>
+                            </div>
                         </div>
                         <div class="carouselBlock">
-                            <img src="./images/carousel/funk.jpeg" alt="">
-                            <p>#funk</p>
+                            <div>
+
+                                <img class="carousel-img" src="./images/carousel/funk.jpeg" alt="">
+                                <p>#funk</p>
+                            </div>
                         </div>
                         <div class="carouselBlock">
-                            <img src="./images/carousel/conscientius.jpg" alt="">
-                            <p>#conscientius</p>
+                            <div>
+                                <img class="carousel-img" src="./images/carousel/conscientius.jpg" alt="">
+                                <p>#conscientius</p>
+                            </div>
                         </div>
                         <div class="carouselBlock">
-                            <img src="./images/carousel/HipHop.jpg" alt="">
-                            <p>#Hip Hop</p>
+                            <div>
+                                <img class="carousel-img" src="./images/carousel/HipHop.jpg" alt="">
+                                <p>#Hip Hop</p>
+                            </div>
                         </div>
                         <div class="carouselBlock">
-                            <img src="./images/carousel/teenRock.jpg" alt="">
-                            <p>#TeenRock</p>
+                            <div>
+
+                                <img class="carousel-img" src="./images/carousel/teenRock.jpg" alt="">
+                                <p>#TeenRock</p>
+                            </div>
                         </div>
                         <div class="carouselBlock">
-                            <img src="./images/carousel/oldBrazilianFunk.jpg" alt="">
-                            <p>#Old Brazilian Funk</p>
+                            <div>
+                                <img class="carousel-img" src="./images/carousel/oldBrazilianFunk.jpg" alt="">
+                                <p>#Old Brazilian Funk</p>
+                            </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="recently-played">
+                    <div class="recently-menu">
+                        <h2>Recently played</h2>
+                        <a href="#">Show all</a>
                     </div>
                 </div>
             </div>

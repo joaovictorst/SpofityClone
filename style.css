@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    /* outline: dashed 1px red; */
+    outline: dashed 1px red;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -20,18 +20,64 @@ header {
     align-items: center;
 }
 
+header div{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 header form {
     width: 100px;
+}
+
+div .whats-new{
+    display:grid;
+    align-content: center;
+    justify-items: center;
+        height: 32px;
+        width: 32px;
 }
 
 .Block {
     padding: 8px;
 }
 
+.searchbox {
+    width: auto;
+}
+
 .search {
     align-items: center;
     background-color: rgb(41, 41, 41);
     border-radius: 500px;
+    width: 474px;
+    height: 48px;
+}
+
+.search .search-icon {
+    margin-left: 10px;
+}
+
+.search .browse-icon {
+    margin-right: 10px;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    width: 100%;
+    outline: none;
+
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+header .install-button{
+    border-radius: 9999px;
+    padding: 4px 16px 4px 12px;
+    width: 90px;
+    height: 24px;
 }
 
 header figure img {
@@ -39,13 +85,18 @@ header figure img {
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    height: 48px
+    height: 48px;
+    background-color: #1f1f1f;
 }
 
 main {
     gap: 8px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
+}
+
+main nav {
+    border-radius: 8px;
 }
 
 main .SongList {
@@ -69,6 +120,7 @@ main .SongList ul li a {
     background: rgb(179, 179, 179, 0.1);
     padding: 0;
     border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 main .SongList ul li a:hover {
@@ -86,12 +138,46 @@ main nav header {
     justify-content: space-between;
 }
 
+main .button-library {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px;
+    font-size: large;
+    font-weight: bold;
+}
+
+main .plus-library {
+    display: flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 8px;
+    background-color: transparent;
+    border: 0;
+}
+
+main .plus-library:hover {
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+    cursor: pointer;
+}
+
 main .scroll .searchlibrary {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
 }
 
+main .scroll .searchlibrary .recents-button a {
+    display: flex;
+    flex-direction: row;
+
+    gap: 8px;
+}
 main ul li a {
     align-items: center;
     display: flex;
@@ -118,10 +204,11 @@ main nav {
 }
 
 .mainSection {
+    padding: 20px;
     padding-top: 8px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to top, #121212, #31285c);
+    background: linear-gradient(to top, #121212 55%, #31285c 100%);
     border-radius: 8px;
 }
 
@@ -141,7 +228,11 @@ main nav {
 }
 
 .explor-gen {
-    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.explor-gen h2 {
+    color: #fff;
 }
 
 .carousel {
@@ -149,15 +240,46 @@ main nav {
     display: flex;
 }
 
-.carouselBlock, .carouselBlock img {
-    width: 100px;
-    height: 200px;
+.carouselBlock {
+    width: 150px;
+    height: 230px;
+    padding: 12px;
 }
 
 .carouselBlock img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 25%);
 }
 
-.carousel img {
+.carouselBlock div {
+    position: relative;
+}
+
+.carouselBlock p {
+    position: absolute;
+    z-index: 3;
+    padding: 12px;
+    color: #fff;
+    bottom: 12px;
+    font-weight: 700;
+}
+
+.carousel-img {
     border-radius: 12px;
+}
+
+.recently-played {
+    margin-top: 10px;
+}
+
+.recently-menu {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.recently-menu h2 {
+    color: #fff;
 }
