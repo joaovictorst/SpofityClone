@@ -6,7 +6,7 @@
     text-decoration: none;
     font-family: "Roboto", serif;
     color: rgb(179, 179, 179);
-    
+
 }
 
 * {
@@ -121,37 +121,6 @@ main nav {
     border-radius: 8px;
 }
 
-main .SongList {
-    margin: auto;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-
-main .SongList ul {
-    list-style: none;
-    width: 100%;
-    display: grid;
-    grid-gap: 8px;
-    grid-template-columns: repeat(4, 1fr);
-
-}
-
-main .SongList ul li a {
-    background: rgb(179, 179, 179, 0.1);
-    padding: 0;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-main .SongList ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-main .SongList ul li a img {
-    border-radius: 4px 0 0 4px;
-}
-
 
 main nav header {
     padding: 12px 16px 8px 16px;
@@ -227,34 +196,52 @@ main nav {
 
 .mainSection {
     width: 80%;
-    padding: 40px 30px;
-    padding-top: 18px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to top, #121212 55%, #31285c 100%);
+    align-items: start;
+    background: linear-gradient(to top, #121212 25%, #533ba0 100%);
     border-radius: 8px;
-    gap: 40px;
 
     overflow-y: scroll;
 
     height: 80vh;
 }
 
-.mainSection .buttons {
-    margin-bottom: 24px;
-    margin-top: 8px;
+.mainSection header {
+    gap: 20px;
+}
+.mainSection header img {
+    border-radius: 8px;
+    width: 210px;
+    height: 210px;
+    
 }
 
+.title-liked {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
+.title-liked h1,.title-liked span:first-child {
+    color: #fff;
+}
 
-.mainSection .section .buttons a {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 4px 12px 4px 12px;
+.title-liked h1{
+    font-size: 99px;
+}
+
+.card-name .profile-img {
     border-radius: 999px;
+    width: 24px;
+    height: 24px;
 }
 
-.section {
-    width: 100%;
+.card-name a {
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
 }
 
 .explor-gen {
@@ -311,7 +298,7 @@ main nav {
     color: #fff;
 }
 
-.mixes{
+.mixes {
     display: flex;
     gap: 20px;
 }
@@ -358,8 +345,8 @@ main nav {
     gap: 20px;
 }
 
-.compass-bar{
-    
+.compass-bar {
+
     display: flex;
     border-radius: 90px;
     background: #4d4d4d;
