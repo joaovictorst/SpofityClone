@@ -6,7 +6,7 @@
     text-decoration: none;
     font-family: "Roboto", serif;
     color: rgb(179, 179, 179);
-    
+
 }
 
 * {
@@ -311,7 +311,7 @@ main nav {
     color: #fff;
 }
 
-.mixes{
+.mixes {
     display: flex;
     gap: 20px;
 }
@@ -358,11 +358,106 @@ main nav {
     gap: 20px;
 }
 
-.compass-bar{
-    
+.compass-bar {
+
     display: flex;
     border-radius: 90px;
     background: #4d4d4d;
     width: 444px;
     height: 4px;
+}
+
+@media (max-width: 1480px) and (min-height: 721px) {
+    main .SongList ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carouselBlock, .carouselBlock p {
+        font-size: small;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1280px) and (max-height: 720px) {
+    main .SongList ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carouselBlock, .carouselBlock p {
+        font-size: small;
+    }
+
+    .carouselBlock:last-child{
+        display: none;
+    }
+}
+
+@media (min-height:900px) {
+
+    footer {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    main nav {
+      height: 85vh;
+    }
+
+    .mainSection {
+        height: 85vh;
+    }
+}
+
+
+@media screen and (min-height: 1800px) {
+    footer {
+        padding-top: 40px;
+    }
+
+    main .SongList ul li a {
+        display: flex;
+        align-items: center;
+        background: rgb(179, 179, 179, 0.1);
+        height: 100px;
+        font-size: 25px;
+    }
+
+    main .SongList ul li img {
+        height: 96px;
+        width: 96px;
+
+    }
+
+    .carouselBlock {
+        display: block;
+        width: 250px;
+    }
+
+    .mix-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mixes {
+        display: flex;
+        gap: 200px;
+    }
+
+    .mix-played {
+        margin-top: 200px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .playlist-mix img {
+        gap: 20px;
+        height: 300px;
+        width: 300px;
+    }
 }
