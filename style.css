@@ -367,13 +367,21 @@ main nav {
     height: 4px;
 }
 
+.alert {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background-color: red;
+}
+
 @media (max-width: 1480px) and (min-height: 721px) {
     main .SongList ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .carouselBlock, .carouselBlock p {
+    .carouselBlock,
+    .carouselBlock p {
         font-size: small;
     }
 
@@ -388,11 +396,12 @@ main nav {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .carouselBlock, .carouselBlock p {
+    .carouselBlock,
+    .carouselBlock p {
         font-size: small;
     }
 
-    .carouselBlock:last-child{
+    .carouselBlock:last-child {
         display: none;
     }
 }
@@ -406,7 +415,7 @@ main nav {
 
 @media screen and (min-height: 1000px) {
     main nav {
-      height: 85vh;
+        height: 85vh;
     }
 
     .mainSection {
@@ -439,11 +448,12 @@ main nav {
         width: 250px;
     }
 
-    .mix-menu{
+    .mix-menu {
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
+
     .mixes {
         display: flex;
         gap: 200px;
@@ -460,4 +470,37 @@ main nav {
         height: 300px;
         width: 300px;
     }
+
+    .library-section ul li {
+        height: 150px;
+
+        margin-bottom: 40px;
+
+        font-size: 30px;
+    }
+
+    .library-section ul li img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    /* *{
+        display: none;
+    } */
+
+    body .alert {
+        z-index: 4;
+        background-color: rgb(54, 54, 54);
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+
 }
